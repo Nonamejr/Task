@@ -2,7 +2,7 @@ document.querySelector("#submit1").onclick = function(){
     let obj = ['1', '2', '3', '4', '5']
 
     for ( let i = 0; i <obj.length; i++) {
-        console.log(obj[i])
+        confirm(obj[i])
     }
 }
 
@@ -11,21 +11,21 @@ document.querySelector("#submit2").onclick = function(){
     let result = 0
     for ( let i = 0; i <obj.length; i++) {
         result += Number(obj[i])
-    }  console.log(result) 
+    }  confirm(result) 
     
 }
 
 document.querySelector("#submit3").onclick = function(){
     let obj = {a: '1',b: '2',c: '3',d: '4',e: '5'}
     for ( let key in obj) {
-        console.log(obj[key])
+        confirm(obj[key])
     }
 }
 
 document.querySelector("#submit4").onclick = function(){
     let obj = {"kolya" : '200','vasya' : '300',"petya" : '400'}
     for ( let key in obj) {
-        console.log(key + ' zarplata ' + obj[key] + ' dollars')
+        confirm(key + ' zarplata ' + obj[key] + ' dollaroov')
     }
 }
 
@@ -35,7 +35,7 @@ document.querySelector("#submit5").onclick = function(){
         if (obj[i] < 3 || obj[i] > 9){
             continue
         }
-        console.log(obj[i]);
+        confirm(obj[i]);
     }
 }
 
@@ -47,14 +47,14 @@ document.querySelector("#submit6").onclick = function(){
             continue
         }
         result += obj[i]
-    } console.log(result)
+    } confirm(result)
 }
 
 document.querySelector("#submit7").onclick = function(){
     let obj = [1, 2, 5 ,9 , 4 ,13, 4, 10]
     for ( let i = 0; i < obj.length; i++) {
         if (obj[i] = 4 ){
-            console.log('yest');
+            confirm('yest');
             break
         }  
     }
@@ -66,7 +66,7 @@ document.querySelector("#submit8").onclick = function(){
         let num = String(obj[i]);
         let char = num[0];
         if (char == 1 || char == 2 || char == 5) {
-            console.log(num);
+            confirm(num);
         }
     }
 }
@@ -77,7 +77,7 @@ document.querySelector("#submit9").onclick = function(){
     for ( let i = 0; i < obj.length; i++) {
          arr += '-' + String(obj[i])
     } 
-    console.log(arr)
+    confirm(arr)
 }
 
 document.querySelector("#submit10").onclick = function(){
@@ -122,7 +122,7 @@ document.querySelector("#submit12").onclick = function(){
         let num = i
         n /= 2 
         if (n < 50) {
-            alert(num + ' iterachiy')
+            confirm(num + ' iterachiy')
             break
         }
     }
